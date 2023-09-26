@@ -35,6 +35,8 @@ all players on the server to you! You can use the plugin completely at events, s
 # Configure the text and sound of the plugin, through the 'config.yml'. Minecraft sounds page:
 # https://www.digminecraft.com/lists/sound_list_pe.php
 
+# DO NOT TOUCH!
+config-version: "1.0.0"
 # ======(SETTINGS)======
 Settings:
   # Prefix for Tpall message
@@ -45,6 +47,11 @@ Settings:
   Tpall-no-sound: true
   # Type of sound when using Tpall
   Tpall-sound: "portal.portal"
+
+  Form:
+    content: "&bAre you sure you want to teleport everyone to your position?"
+    confirm-button: "&l&2YES"
+    decline-button: "&l&cNO"
 ...
 ```
 
