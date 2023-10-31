@@ -108,10 +108,10 @@ class Main extends PluginBase{
                 case true:
                     foreach($this->getServer()->getOnlinePlayers() as $players){
                         $players->teleport($player->getPosition());
-                        $player->sendMessage(TextFormat::colorize($this->getConfig()->getNested("Settings.Prefix")) . TextFormat::colorize($this->getConfig()->getNested("Settings.Message-tpall")));
-                        if($this->getConfig()->getNested("Settings.Tpall-no-sound")){
-                            PluginUtils::PlaySound($player, $this->getConfig()->getNested("Settings.Tpall-sound"));
-                        }
+                    }
+                    $player->sendMessage(TextFormat::colorize($this->getConfig()->getNested("Settings.Prefix")) . TextFormat::colorize($this->getConfig()->getNested("Settings.Message-tpall")));
+                    if($this->getConfig()->getNested("Settings.Tpall-no-sound")){
+                        PluginUtils::PlaySound($player, $this->getConfig()->getNested("Settings.Tpall-sound"));
                     }
                 break;
 
